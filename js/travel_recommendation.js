@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     fetch('travel_recommendation_api.json')
         .then(response => {
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error('Network Response was not ok');
             }
             return response.json();
         })
